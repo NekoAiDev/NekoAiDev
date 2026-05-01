@@ -22,9 +22,6 @@
 ## 📋 Table of Contents
 
 - [About Us](#-about-us)
-- [Our Mission](#-our-mission)
-- [Our Story](#-our-story)
-- [Why Choose Us](#-why-choose-our-plugins)
 - [Projects](#-projects)
 - [Technical Architecture](#-technical-architecture)
 - [Security Philosophy](#-security-philosophy)
@@ -42,7 +39,8 @@
 
 ---
 
-## About Us
+<details>
+<summary><h2>📖 About Us</h2></summary>
 
 Neko Ai Dev is an open-source development organization dedicated to building high-quality plugins for the **[AstrBot](https://github.com/Soulter/AstrBot)** framework. We are a group of developers passionate about open source and user experience, committed to making the AstrBot ecosystem more vibrant.
 
@@ -71,10 +69,8 @@ We believe great open-source tools should:
 - **Keep Evolving** — We actively listen to community feedback, iterate continuously, and keep adding new features. Every version is carefully planned to find the right balance between stability and innovation
 - **Be Community-Driven** — Our development direction is shaped by community needs. Every feature request, every bug report, and every discussion helps shape the future of our plugins
 
-### 📖 Our Story
-
 <details>
-<summary>📖 Click to expand our story</summary>
+<summary><b>📖 Our Story</b></summary>
 
 It all started with a simple need: **managing runaway API calls in group chats**.
 
@@ -90,10 +86,8 @@ From one person writing code to building an organization, establishing automated
 
 </details>
 
-### 🏗️ Organization Structure
-
 <details>
-<summary>🏗️ Click to expand organization structure</summary>
+<summary><b>🏗️ Organization Structure</b></summary>
 
 Neko Ai Dev uses a lean organizational model:
 
@@ -113,9 +107,12 @@ Neko Ai Dev uses a lean organizational model:
 - ✅ MIT open-source license — fully transparent code, free to modify and redistribute
 - ✅ Bilingual documentation (中文 + English), serving users worldwide
 
+</details>
+
 ---
 
-## 📦 Projects
+<details>
+<summary><h2>📦 Projects</h2></summary>
 
 ### [astrbot_plugin_api_limiter](https://github.com/NekoAiDev/astrbot_plugin_api_limiter)
 
@@ -126,7 +123,7 @@ Neko Ai Dev uses a lean organizational model:
 This is our flagship plugin and one of the most popular rate limiting solutions on the AstrBot Plugin Marketplace. From v1.0 to v2.4.5, we've continuously refined every detail.
 
 <details>
-<summary>📋 Click to expand details</summary>
+<summary><b>📋 Details</b></summary>
 
 **Typical Use Cases:**
 
@@ -174,7 +171,7 @@ This is our flagship plugin and one of the most popular rate limiting solutions 
 One plugin = a complete group chat toolkit. No need to install a bunch of scattered plugins — Toolbox gives you everything you need for daily group chat in a single install.
 
 <details>
-<summary>📋 Click to expand details</summary>
+<summary><b>📋 Details</b></summary>
 
 **Feature Categories:**
 
@@ -199,9 +196,12 @@ One plugin = a complete group chat toolkit. No need to install a bunch of scatte
 
 > 📌 Development complete. Coming soon to the [AstrBot Plugin Marketplace](https://plugins.astrbot.app).
 
+</details>
+
 ---
 
-## 🛠 Technical Architecture
+<details>
+<summary><h2>🛠 Technical Architecture</h2></summary>
 
 ### Tech Stack
 
@@ -214,10 +214,8 @@ One plugin = a complete group chat toolkit. No need to install a bunch of scatte
 | ![MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square) | License | All plugins under MIT license |
 | ![YAML](https://img.shields.io/badge/Config-YAML-orange?style=flat-square) | Configuration | YAML-based plugin configuration |
 
-### Design Principles
-
 <details>
-<summary>💡 Click to expand design principles</summary>
+<summary><b>💡 Design Principles</b></summary>
 
 Our plugin architecture follows these design principles:
 
@@ -229,14 +227,14 @@ Our plugin architecture follows these design principles:
 
 </details>
 
+</details>
+
 ---
 
-## 🛡️ Security Philosophy
+<details>
+<summary><h2>🛡️ Security Philosophy</h2></summary>
 
 Security is the foundation of our design, not an afterthought:
-
-<details>
-<summary>🔒 Click to expand security strategy details</summary>
 
 1. **Input Validation** — All input from users and external APIs undergoes strict type checking and length limits to prevent injection attacks and crashes from abnormal data
 2. **Least Privilege** — Plugins only request the minimum permissions needed to accomplish their tasks. No reading or modifying unrelated data
@@ -249,14 +247,10 @@ Security is the foundation of our design, not an afterthought:
 
 ---
 
-## 🧪 Quality Assurance
+<details>
+<summary><h2>🧪 Quality Assurance</h2></summary>
 
 We've established a comprehensive quality assurance system to ensure the reliability of every release:
-
-<details>
-<summary>✅ Click to expand testing and quality strategy</summary>
-
-### Testing Strategy
 
 | Layer | Description |
 |-------|-------------|
@@ -266,7 +260,7 @@ We've established a comprehensive quality assurance system to ensure the reliabi
 | 🧩 Edge Case Testing | Defensive handling of edge cases including empty input, extra-long input, and special characters |
 | 🔄 Regression Verification | Regression testing after every bug fix to ensure no new issues are introduced |
 
-### Quality Commitments
+**Quality Commitments:**
 
 - **Zero Crash Goal**: Users should never encounter plugin-caused crashes during normal usage
 - **Fast Fixes**: Confirmed bugs receive patch releases within 48 hours
@@ -277,7 +271,8 @@ We've established a comprehensive quality assurance system to ensure the reliabi
 
 ---
 
-## 📜 Development Standards
+<details>
+<summary><h2>📜 Development Standards</h2></summary>
 
 We follow these standards to ensure code quality:
 
@@ -291,10 +286,8 @@ Following [Semantic Versioning](https://semver.org/) (SemVer):
 | New features (medium scope) | MINOR +1 | `2.4.5` → `2.5.0` |
 | Major rewrites | MAJOR +1 | `2.5.0` → `3.0.0` |
 
-### Git Commit Convention
-
 <details>
-<summary>📝 Click to expand Git commit convention</summary>
+<summary><b>📝 Git Commit Convention</b></summary>
 
 Using [Conventional Commits](https://www.conventionalcommits.org/):
 
@@ -309,10 +302,8 @@ Using [Conventional Commits](https://www.conventionalcommits.org/):
 
 </details>
 
-### Code Style
-
 <details>
-<summary>🎨 Click to expand code style requirements</summary>
+<summary><b>🎨 Code Style</b></summary>
 
 - Automatically checked with **ruff**, CI runs on every PR
 - Python type annotation coverage ≥ 80%
@@ -330,14 +321,14 @@ Every update must complete these steps:
 3. ✅ Publish GitHub Release (with changelog)
 4. ✅ Update [AstrBot Plugin Marketplace](https://plugins.astrbot.app)
 
+</details>
+
 ---
 
-## 🤖 Automation Pipeline
+<details>
+<summary><h2>🤖 Automation Pipeline</h2></summary>
 
 We've configured a complete GitHub Actions automation pipeline for each plugin repository:
-
-<details>
-<summary>⚙️ Click to expand automation pipeline details</summary>
 
 ### Auto Issue Triage (issue-triage.yml)
 
@@ -369,10 +360,8 @@ We've configured a complete GitHub Actions automation pipeline for each plugin r
 
 ---
 
-## 🌍 Open Source Culture
-
 <details>
-<summary>🌱 Click to expand our view on open source</summary>
+<summary><h2>🌍 Open Source Culture</h2></summary>
 
 Open source is more than just putting code on GitHub. For us, it's a culture and a commitment:
 
@@ -404,7 +393,8 @@ The doors of the open-source community are always open for you 🚪
 
 ---
 
-## 🗺 Roadmap
+<details>
+<summary><h2>🗺 Roadmap</h2></summary>
 
 ### ✅ Completed
 
@@ -431,12 +421,12 @@ The doors of the open-source community are always open for you 🚪
 - [ ] 📦 Plugin Template — Standardized AstrBot plugin development template
 - [ ] 🤝 Community Contributor System — Contributor leaderboard and reward mechanism
 
+</details>
+
 ---
 
-## 📜 Version History
-
 <details>
-<summary>📅 Click to expand version history</summary>
+<summary><h2>📜 Version History</h2></summary>
 
 ### astrbot_plugin_api_limiter
 
@@ -454,7 +444,8 @@ The doors of the open-source community are always open for you 🚪
 
 ---
 
-## 💬 Community Feedback
+<details>
+<summary><h2>💬 Community Feedback</h2></summary>
 
 Here's what our users and community are saying:
 
@@ -476,12 +467,12 @@ Here's what our users and community are saying:
 
 We know that every Star, every Issue, and every PR is the community's recognition of our work. It's these interactions that keep us moving forward.
 
+</details>
+
 ---
 
-## 🔮 Future Vision
-
 <details>
-<summary>🌟 Click to expand our long-term vision</summary>
+<summary><h2>🔮 Future Vision</h2></summary>
 
 ### Short-Term Goals (3 months)
 
@@ -508,7 +499,8 @@ We know that every Star, every Issue, and every PR is the community's recognitio
 
 ---
 
-## 🤝 Contributing
+<details>
+<summary><h2>🤝 Contributing</h2></summary>
 
 We welcome contributions in any form! Whether you want to:
 
@@ -518,10 +510,8 @@ We welcome contributions in any form! Whether you want to:
 - 💬 Share your experience in the community
 - ⭐ Give us a Star on GitHub
 
-**How to Contribute:**
-
 <details>
-<summary>📖 Click to expand contribution guide</summary>
+<summary><b>📖 Contribution Guide</b></summary>
 
 1. **Fork** the repository you want to contribute to
 2. **Create a feature branch**: `git checkout -b feat/amazing-feature`
@@ -540,9 +530,12 @@ We welcome contributions in any form! Whether you want to:
 
 Every bit of support motivates us to keep building!
 
+</details>
+
 ---
 
-## ❓ FAQ
+<details>
+<summary><h2>❓ FAQ</h2></summary>
 
 <details>
 <summary><b>🔧 How do I install the plugins?</b></summary>
@@ -638,9 +631,12 @@ We configure 3 automated Workflow pipelines for each plugin repository:
 All of this runs on GitHub's servers at zero cost with no maintenance required.
 </details>
 
+</details>
+
 ---
 
-## 📮 Contact
+<details>
+<summary><h2>📮 Contact</h2></summary>
 
 | Method | Info |
 |--------|------|
@@ -655,6 +651,8 @@ All of this runs on GitHub's servers at zero cost with no maintenance required.
 - **[AstrBot](https://github.com/Soulter/AstrBot)** — For providing an excellent Bot framework and an active community ecosystem
 - **All Contributors** — Every PR, every Issue, every suggestion is a precious contribution to the open-source community
 - **Every User** — Your usage and feedback are our greatest motivation to keep building
+
+</details>
 
 ---
 
