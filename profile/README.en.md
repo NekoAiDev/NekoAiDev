@@ -42,7 +42,7 @@
 <details>
 <summary><h2>📖 About Us</h2></summary>
 
-Neko Ai Dev is an open-source development organization dedicated to building high-quality plugins for the **[AstrBot](https://github.com/Soulter/AstrBot)** framework. We are a group of developers passionate about open source and user experience, committed to making the AstrBot ecosystem more vibrant.
+Neko Ai is an open-source development organization dedicated to building high-quality plugins for the **[AstrBot](https://github.com/Soulter/AstrBot)** framework. We are a group of developers passionate about open source and user experience, committed to making the AstrBot ecosystem more vibrant.
 
 **AstrBot** is an excellent multi-platform chatbot framework supporting QQ, WeChat, Telegram, Feishu (Lark), Discord, and more, with an active open-source community and a rich plugin ecosystem. As active participants in the AstrBot community, we don't just build plugins — we also contribute documentation, share experiences, and help more users and developers join the ecosystem.
 
@@ -80,7 +80,7 @@ From a simple call counter, it evolved through dozens of versions to include int
 
 Along the way, we noticed the AstrBot community was missing handy utility tools — IP lookups, random draws, trending topic searches, and more. Users would frequently ask in group chats, "Is there a weather command?" or "Can you add a lucky draw feature?" — That led us to build **astrbot_plugin_qq_toolbox**, bundling 20+ useful commands into a single plugin so users only need one install for a full toolkit. One plugin to solve all daily needs — that's our design philosophy.
 
-The name **Neko Ai Dev** reflects our values: "Neko" (cat) represents the fun and warmth we bring to open source, "Ai" stands for our commitment to the AI era, and "Dev" is our developer roots. We aim to create value for the community — even if it's just a small convenience.
+The name **Neko Ai** reflects our values: "Neko" (cat) represents the fun and warmth we bring to open source, "Ai" stands for our commitment to the AI era, and "Dev" is our developer roots. We aim to create value for the community — even if it's just a small convenience.
 
 From one person writing code to building an organization, establishing automated workflows, listing on the plugin marketplace, and publishing bilingual documentation... this journey has been full of challenges and rewards. We're grateful to the AstrBot community and every user who has supported us along the way.
 
@@ -89,7 +89,7 @@ From one person writing code to building an organization, establishing automated
 <details>
 <summary><b>🏗️ Organization Structure</b></summary>
 
-Neko Ai Dev uses a lean organizational model:
+Neko Ai uses a lean organizational model:
 
 - **Organization Owner**: [xiaohondan](https://github.com/xiaohondan) — Responsible for overall planning, development, and community maintenance
 - **Automation System**: GitHub Actions handles repetitive tasks like issue triage, PR checks, and code review, allowing developers to focus on creation
@@ -658,7 +658,7 @@ All of this runs on GitHub's servers at zero cost with no maintenance required.
 
 <div align="center">
 
-**Made with ❤️ by Neko Ai Dev**
+**Made with ❤️ by Neko Ai**
 
 *If you like our plugins, give them a ⭐ on GitHub!*
 

@@ -2,11 +2,11 @@
 
 <img src="https://avatars.githubusercontent.com/u/228279600?v=4" alt="Neko Ai" width="120" height="120" style="border-radius: 50%;"/>
 
-# Neko Ai Dev
+# Neko Ai
 
 **AstrBot Plugin Development Organization**
 
-喵~ Welcome to Neko Ai Dev! We are a development team focused on creating high-quality plugins for [AstrBot](https://github.com/Soulter/AstrBot).
+喵~ Welcome to Neko Ai! We are a development team focused on creating high-quality plugins for [AstrBot](https://github.com/Soulter/AstrBot).
 
 [![GitHub](https://img.shields.io/badge/GitHub-NekoAiDev-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/NekoAiDev)
 [![AstrBot](https://img.shields.io/badge/AstrBot-Plugin-blue?style=flat-square)](https://github.com/Soulter/AstrBot)
@@ -19,7 +19,7 @@
 
 ## About Us
 
-Neko Ai Dev is an open-source development organization dedicated to building plugins for the **AstrBot** framework. Our mission is to make AstrBot more powerful, more flexible, and more fun.
+Neko Ai is an open-source development organization dedicated to building plugins for the **AstrBot** framework. Our mission is to make AstrBot more powerful, more flexible, and more fun.
 
 We believe that good tools should be intuitive, reliable, and extensible. Every plugin we build follows these principles:
 
@@ -87,7 +87,7 @@ Our plugins are published on the [AstrBot Plugin Marketplace](https://plugins.as
 
 <div align="center">
 
-**Made with ❤️ by Neko Ai Dev**
+**Made with ❤️ by Neko Ai**
 
 *If you like our plugins, give them a ⭐ on GitHub!*
 
