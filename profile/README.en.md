@@ -2,7 +2,7 @@
 
 <img src="https://avatars.githubusercontent.com/u/228279600?v=4" alt="Neko Ai" width="120" height="120" style="border-radius: 50%;"/>
 
-### Neko Ai
+# Neko Ai
 
 **AstrBot Plugin Development Organization**
 
