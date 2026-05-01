@@ -13,7 +13,7 @@
 [![Plugins](https://img.shields.io/badge/Plugins-2+-orange?style=flat-square)](https://github.com/orgs/NekoAiDev/repositories)
 [![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/NekoAiDev/.github/tree/main/profile)
 
-[🌐 English](https://github.com/NekoAiDev)
+[🌐 English](https://github.com/NekoAiDev/.github/blob/main/profile/README.en.md)
 
 </div>
 
@@ -68,6 +68,9 @@ Neko Ai Dev 是一个专注于为 **[AstrBot](https://github.com/Soulter/AstrBot
 
 ### 📖 我们的故事
 
+<details>
+<summary>📖 点击展开我们的故事</summary>
+
 一切始于一个简单的需求：**管理群聊中泛滥的 API 调用**。
 
 当 AstrBot 逐渐流行，越来越多的用户开始在群聊中使用大模型 API，但随之而来的是成本失控和滥用问题。有的用户一天能刷掉几百次 API 调用，管理员苦不堪言。市面上没有一款现成的限频插件能够满足复杂场景的需求 —— 需要支持多群聊差异化、分时段策略、黑名单管理、超额提醒…… 于是，**astrbot_plugin_api_limiter** 诞生了。
@@ -80,13 +83,20 @@ Neko Ai Dev 是一个专注于为 **[AstrBot](https://github.com/Soulter/AstrBot
 
 从一个人写代码，到建立组织、完善自动化流程、上架插件市场、撰写双语文档…… 这段旅程充满了挑战和收获。感谢 AstrBot 社区和每一位用户的支持，让我们走到了今天。
 
+</details>
+
 ### 🏗️ 组织架构
+
+<details>
+<summary>🏗️ 点击展开组织架构</summary>
 
 Neko Ai Dev 采用轻量化的组织管理模式：
 
 - **组织拥有者**：[xiaohondan](https://github.com/xiaohondan) — 负责整体规划、代码开发和社区维护
 - **自动化系统**：GitHub Actions 承担 Issue 分类、PR 检查、代码审查等重复性工作，让开发者专注于创造
 - **开源协作**：欢迎任何感兴趣的开发者通过 Fork + PR 的方式参与贡献
+
+</details>
 
 ### 🚀 为什么选择我们的插件？
 
@@ -109,6 +119,9 @@ Neko Ai Dev 采用轻量化的组织管理模式：
 **API 调用限频器** — 一款全面的 AstrBot 限频插件，帮助你管理 API 调用频率，防止滥用。适用于接入大模型 API、翻译 API 等按量计费接口的场景，有效控制成本。
 
 这是我们的旗舰插件，也是 AstrBot 插件市场上最受欢迎的限频解决方案之一。从 v1.0 到 v2.4.5，我们持续打磨每一个细节。
+
+<details>
+<summary>📋 点击展开详细信息</summary>
 
 **典型使用场景：**
 
@@ -141,6 +154,8 @@ Neko Ai Dev 采用轻量化的组织管理模式：
 # 3. 重启 AstrBot，限频器自动生效
 ```
 
+</details>
+
 > 📌 已上架 [AstrBot 插件市场](https://plugins.astrbot.app)，版本 **v2.4.5**，持续更新中。
 
 ---
@@ -152,6 +167,9 @@ Neko Ai Dev 采用轻量化的组织管理模式：
 **QQ 功能工具箱** — 一款集娱乐、查询、内容生成和群管理于一体的多功能插件，包含 20+ 指令，让你的群聊生活更加丰富多彩。
 
 一个插件 = 一个完整的群聊工具箱。不需要安装一堆零散的插件，工具箱为你整合了日常群聊所需的所有功能。
+
+<details>
+<summary>📋 点击展开详细信息</summary>
 
 **功能分类：**
 
@@ -172,6 +190,8 @@ Neko Ai Dev 采用轻量化的组织管理模式：
 - 🎨 **图片生成** — 输入描述，AI 生成图片
 - 📝 **文案创作** — AI 辅助写文案、写段子、写祝福语
 
+</details>
+
 > 📌 已开发完成，即将上架 [AstrBot 插件市场](https://plugins.astrbot.app)。
 
 ---
@@ -191,6 +211,9 @@ Neko Ai Dev 采用轻量化的组织管理模式：
 
 ### 设计理念
 
+<details>
+<summary>💡 点击展开设计理念</summary>
+
 我们的插件架构遵循以下设计原则：
 
 1. **模块化设计** — 每个功能模块独立，便于维护和扩展
@@ -198,6 +221,8 @@ Neko Ai Dev 采用轻量化的组织管理模式：
 3. **渐进增强** — 基础功能开箱即用，高级功能按需启用
 4. **优雅降级** — 外部服务不可用时自动跳过，不影响核心功能
 5. **防御性编程** — 对所有外部输入进行校验，避免意外崩溃
+
+</details>
 
 ---
 
@@ -217,6 +242,9 @@ Neko Ai Dev 采用轻量化的组织管理模式：
 
 ### Git Commit 规范
 
+<details>
+<summary>📝 点击展开 Git Commit 规范</summary>
+
 使用约定式提交（Conventional Commits）：
 
 | 前缀 | 用途 | 示例 |
@@ -228,12 +256,19 @@ Neko Ai Dev 采用轻量化的组织管理模式：
 | `chore:` | 维护任务 | `chore: 升级依赖版本` |
 | `perf:` | 性能优化 | `perf: 优化日志查询速度` |
 
+</details>
+
 ### 代码风格
+
+<details>
+<summary>🎨 点击展开代码风格要求</summary>
 
 - 通过 **ruff** 自动检查，PR 提交时自动运行 CI
 - Python 类型注解覆盖率 ≥ 80%
 - 每个公开函数都有 docstring
 - 错误信息使用中文，方便用户理解
+
+</details>
 
 ### 发布流程
 
@@ -249,6 +284,9 @@ Neko Ai Dev 采用轻量化的组织管理模式：
 ## 🤖 自动化流程
 
 我们为每个插件仓库配置了完整的 GitHub Actions 自动化流水线：
+
+<details>
+<summary>⚙️ 点击展开自动化流程详情</summary>
 
 ### Issue 自动分类（issue-triage.yml）
 
@@ -275,6 +313,8 @@ Neko Ai Dev 采用轻量化的组织管理模式：
 | 格式检查 | ruff 代码格式检查 |
 | 触发时机 | push 到 main/master + PR 提交时 |
 | 运行环境 | Python 3.12 |
+
+</details>
 
 ---
 
@@ -309,6 +349,9 @@ Neko Ai Dev 采用轻量化的组织管理模式：
 
 ## 📜 版本历史
 
+<details>
+<summary>📅 点击展开版本历史</summary>
+
 ### astrbot_plugin_api_limiter
 
 | 版本 | 日期 | 主要变更 |
@@ -320,6 +363,8 @@ Neko Ai Dev 采用轻量化的组织管理模式：
 | v2.1.0 | 2026-02 | 群聊独立配额 |
 | v2.0.0 | 2026-01 | 大版本重构，架构优化 |
 | v1.x.x | 2025 | 初始版本，基础限频功能 |
+
+</details>
 
 ---
 
@@ -335,6 +380,9 @@ Neko Ai Dev 采用轻量化的组织管理模式：
 
 **贡献指南：**
 
+<details>
+<summary>📖 点击展开贡献指南</summary>
+
 1. **Fork** 你想要贡献的仓库
 2. **创建特性分支**：`git checkout -b feat/amazing-feature`
 3. **提交更改**：`git commit -m "feat: 添加某个功能"`
@@ -347,6 +395,8 @@ Neko Ai Dev 采用轻量化的组织管理模式：
 - 请确保代码通过 ruff 检查（`ruff check .`）
 - PR 标题建议使用 `feat:` / `fix:` / `docs:` 等前缀
 - 请关联相关 Issue（`Fixes #xx` / `关闭 #xx`）
+
+</details>
 
 你的每一份支持都是我们持续开发的动力！
 

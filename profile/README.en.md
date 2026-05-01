@@ -13,7 +13,7 @@
 [![Plugins](https://img.shields.io/badge/Plugins-2+-orange?style=flat-square)](https://github.com/orgs/NekoAiDev/repositories)
 [![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/NekoAiDev/.github/tree/main/profile)
 
-[🌐 中文](https://github.com/NekoAiDev)
+[🌐 中文](./README.md)
 
 </div>
 
@@ -68,6 +68,9 @@ We believe great open-source tools should:
 
 ### 📖 Our Story
 
+<details>
+<summary>📖 Click to expand our story</summary>
+
 It all started with a simple need: **managing runaway API calls in group chats**.
 
 As AstrBot grew in popularity, more and more users started using LLM APIs in group chats. But with that came unchecked costs and abuse. Some users would burn through hundreds of API calls in a single day, leaving admins frustrated. No existing rate-limiting plugin could handle complex real-world scenarios — multi-group differentiation, time-based policies, blacklist management, over-limit notifications... So **astrbot_plugin_api_limiter** was born.
@@ -80,13 +83,20 @@ The name **Neko Ai Dev** reflects our values: "Neko" (cat) represents the fun an
 
 From one person writing code to building an organization, establishing automated workflows, listing on the plugin marketplace, and publishing bilingual documentation... this journey has been full of challenges and rewards. We're grateful to the AstrBot community and every user who has supported us along the way.
 
+</details>
+
 ### 🏗️ Organization Structure
+
+<details>
+<summary>🏗️ Click to expand organization structure</summary>
 
 Neko Ai Dev uses a lean organizational model:
 
 - **Organization Owner**: [xiaohondan](https://github.com/xiaohondan) — Responsible for overall planning, development, and community maintenance
 - **Automation System**: GitHub Actions handles repetitive tasks like issue triage, PR checks, and code review, allowing developers to focus on creation
 - **Open Collaboration**: Any interested developer can contribute via the Fork + PR workflow
+
+</details>
 
 ### 🚀 Why Choose Our Plugins?
 
@@ -109,6 +119,9 @@ Neko Ai Dev uses a lean organizational model:
 **API Rate Limiter** — A comprehensive rate limiting plugin for AstrBot that helps you manage API call frequency and prevent abuse. Perfect for metered APIs like LLMs, translation services, and more.
 
 This is our flagship plugin and one of the most popular rate limiting solutions on the AstrBot Plugin Marketplace. From v1.0 to v2.4.5, we've continuously refined every detail.
+
+<details>
+<summary>📋 Click to expand details</summary>
 
 **Typical Use Cases:**
 
@@ -141,6 +154,8 @@ This is our flagship plugin and one of the most popular rate limiting solutions 
 # 3. Restart AstrBot — the rate limiter activates automatically
 ```
 
+</details>
+
 > 📌 Available on the [AstrBot Plugin Marketplace](https://plugins.astrbot.app). Current version: **v2.4.5**. Continuously updated.
 
 ---
@@ -152,6 +167,9 @@ This is our flagship plugin and one of the most popular rate limiting solutions 
 **QQ Toolbox** — An all-in-one utility plugin packed with 20+ commands across entertainment, queries, content generation, and group management. Spice up your group chat experience!
 
 One plugin = a complete group chat toolkit. No need to install a bunch of scattered plugins — Toolbox gives you everything you need for daily group chat in a single install.
+
+<details>
+<summary>📋 Click to expand details</summary>
 
 **Feature Categories:**
 
@@ -172,6 +190,8 @@ One plugin = a complete group chat toolkit. No need to install a bunch of scatte
 - 🎨 **Image Generation** — Enter a description, AI generates an image
 - 📝 **Copywriting** — AI-assisted writing for posts, jokes, greetings, and more
 
+</details>
+
 > 📌 Development complete. Coming soon to the [AstrBot Plugin Marketplace](https://plugins.astrbot.app).
 
 ---
@@ -191,6 +211,9 @@ One plugin = a complete group chat toolkit. No need to install a bunch of scatte
 
 ### Design Principles
 
+<details>
+<summary>💡 Click to expand design principles</summary>
+
 Our plugin architecture follows these design principles:
 
 1. **Modular Design** — Each feature module is independent for easy maintenance and extension
@@ -198,6 +221,8 @@ Our plugin architecture follows these design principles:
 3. **Progressive Enhancement** — Core features work out of the box, advanced features opt-in
 4. **Graceful Degradation** — External service failures are silently skipped without affecting core functionality
 5. **Defensive Programming** — All external inputs are validated to prevent unexpected crashes
+
+</details>
 
 ---
 
@@ -217,6 +242,9 @@ Following [Semantic Versioning](https://semver.org/) (SemVer):
 
 ### Git Commit Convention
 
+<details>
+<summary>📝 Click to expand Git commit convention</summary>
+
 Using [Conventional Commits](https://www.conventionalcommits.org/):
 
 | Prefix | Purpose | Example |
@@ -228,12 +256,19 @@ Using [Conventional Commits](https://www.conventionalcommits.org/):
 | `chore:` | Maintenance | `chore: upgrade dependencies` |
 | `perf:` | Performance | `perf: optimize log query speed` |
 
+</details>
+
 ### Code Style
+
+<details>
+<summary>🎨 Click to expand code style requirements</summary>
 
 - Automatically checked with **ruff**, CI runs on every PR
 - Python type annotation coverage ≥ 80%
 - Every public function has a docstring
 - Error messages in Chinese for better user understanding
+
+</details>
 
 ### Release Process
 
@@ -249,6 +284,9 @@ Every update must complete these steps:
 ## 🤖 Automation Pipeline
 
 We've configured a complete GitHub Actions automation pipeline for each plugin repository:
+
+<details>
+<summary>⚙️ Click to expand automation pipeline details</summary>
 
 ### Auto Issue Triage (issue-triage.yml)
 
@@ -275,6 +313,8 @@ We've configured a complete GitHub Actions automation pipeline for each plugin r
 | Format check | ruff code format checking |
 | Trigger | Push to main/master + PR submission |
 | Runtime | Python 3.12 |
+
+</details>
 
 ---
 
@@ -309,6 +349,9 @@ We've configured a complete GitHub Actions automation pipeline for each plugin r
 
 ## 📜 Version History
 
+<details>
+<summary>📅 Click to expand version history</summary>
+
 ### astrbot_plugin_api_limiter
 
 | Version | Date | Key Changes |
@@ -320,6 +363,8 @@ We've configured a complete GitHub Actions automation pipeline for each plugin r
 | v2.1.0 | 2026-02 | Per-group independent quotas |
 | v2.0.0 | 2026-01 | Major rewrite, architecture optimization |
 | v1.x.x | 2025 | Initial versions, basic rate limiting |
+
+</details>
 
 ---
 
@@ -335,6 +380,9 @@ We welcome contributions in any form! Whether you want to:
 
 **How to Contribute:**
 
+<details>
+<summary>📖 Click to expand contribution guide</summary>
+
 1. **Fork** the repository you want to contribute to
 2. **Create a feature branch**: `git checkout -b feat/amazing-feature`
 3. **Commit your changes**: `git commit -m "feat: add some amazing feature"`
@@ -347,6 +395,8 @@ We welcome contributions in any form! Whether you want to:
 - Ensure your code passes ruff checks (`ruff check .`)
 - PR titles should use `feat:` / `fix:` / `docs:` prefixes
 - Link related issues when applicable (`Fixes #xx` / `Closes #xx`)
+
+</details>
 
 Every bit of support motivates us to keep building!
 
