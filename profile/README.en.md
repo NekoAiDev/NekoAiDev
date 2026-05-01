@@ -11,18 +11,48 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Plugins](https://img.shields.io/badge/Plugins-2+-orange?style=flat-square)](https://github.com/orgs/NekoAiDev/repositories)
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/NekoAiDev/.github/tree/main/profile)
 
-[🌐 中文](./README.md)
+[🌐 中文](https://github.com/NekoAiDev)
 
 </div>
 
 ---
 
+## 📋 Table of Contents
+
+- [About Us](#-about-us)
+- [Our Mission](#-our-mission)
+- [Our Story](#-our-story)
+- [Why Choose Us](#-why-choose-our-plugins)
+- [Projects](#-projects)
+- [Technical Architecture](#-technical-architecture)
+- [Development Standards](#-development-standards)
+- [Automation Pipeline](#-automation-pipeline)
+- [Roadmap](#-roadmap)
+- [Version History](#-version-history)
+- [Contributing](#-contributing)
+- [FAQ](#-faq)
+- [Contact](#-contact)
+
+---
+
 ## About Us
 
-Neko Ai Dev is an open-source development organization dedicated to building high-quality plugins for the **[AstrBot](https://github.com/Soulter/AstrBot)** framework.
+Neko Ai Dev is an open-source development organization dedicated to building high-quality plugins for the **[AstrBot](https://github.com/Soulter/AstrBot)** framework. We are a group of developers passionate about open source and user experience, committed to making the AstrBot ecosystem more vibrant.
 
-**AstrBot** is an excellent multi-platform chatbot framework supporting QQ, WeChat, Telegram, and more, with an active open-source community and a rich plugin ecosystem. We're committed to contributing practical and fun plugins to this ecosystem, making every AstrBot user's experience better.
+**AstrBot** is an excellent multi-platform chatbot framework supporting QQ, WeChat, Telegram, Feishu (Lark), Discord, and more, with an active open-source community and a rich plugin ecosystem. As active participants in the AstrBot community, we don't just build plugins — we also contribute documentation, share experiences, and help more users and developers join the ecosystem.
+
+### 🔢 Key Stats
+
+| Metric | Value |
+|--------|-------|
+| 📦 Published Plugins | 2+ |
+| 🏪 Marketplace Listings | 1 (Rate Limiter) |
+| 📝 Total Releases | 20+ |
+| 🔧 Total Features | 40+ |
+| 🤖 CI/CD Workflows | 3 automated pipelines |
+| 📄 Languages Supported | 中文 + English |
 
 ### 🎯 Our Mission
 
@@ -30,30 +60,43 @@ Neko Ai Dev is an open-source development organization dedicated to building hig
 
 We believe great open-source tools should:
 
-- **Be User-Friendly** — No need to spend hours reading docs. Install and go, with clear configs and explicit feedback.
-- **Be Rock-Solid** — Every commit is thoroughly tested. Edge cases are handled gracefully. No crashes from unexpected input.
-- **Be Open & Transparent** — All code is MIT licensed. Everyone is welcome to read, learn, open issues, and submit PRs.
-- **Keep Evolving** — We actively listen to community feedback, iterate continuously, and keep adding new features.
+- **Be User-Friendly** — No need to spend hours reading docs. Install and go, with clear configs and explicit feedback. Even if you're a complete beginner with zero coding experience, you can set up and configure our plugins in under 5 minutes
+- **Be Rock-Solid** — Every commit is thoroughly tested. Edge cases are handled gracefully. No crashes from unexpected input. We use ruff for code quality checks and GitHub Actions to ensure every commit passes automated tests
+- **Be Open & Transparent** — All code is MIT licensed. Everyone is welcome to read, learn, open issues, and submit PRs. We believe in the power of open source and that transparent development processes build stronger community trust
+- **Keep Evolving** — We actively listen to community feedback, iterate continuously, and keep adding new features. Every version is carefully planned to find the right balance between stability and innovation
+- **Be Community-Driven** — Our development direction is shaped by community needs. Every feature request, every bug report, and every discussion helps shape the future of our plugins
 
 ### 📖 Our Story
 
 It all started with a simple need: **managing runaway API calls in group chats**.
 
-As AstrBot grew in popularity, more and more users started using LLM APIs in group chats. But with that came unchecked costs and abuse. No existing rate-limiting plugin could handle complex real-world scenarios — so **astrbot_plugin_api_limiter** was born.
+As AstrBot grew in popularity, more and more users started using LLM APIs in group chats. But with that came unchecked costs and abuse. Some users would burn through hundreds of API calls in a single day, leaving admins frustrated. No existing rate-limiting plugin could handle complex real-world scenarios — multi-group differentiation, time-based policies, blacklist management, over-limit notifications... So **astrbot_plugin_api_limiter** was born.
 
-From a simple call counter, it evolved through dozens of versions to include interval limiting, quiet hours, whitelists, time-based policies, per-group quotas, and more. Today, it's one of the most comprehensive API rate limiting solutions on the AstrBot Plugin Marketplace.
+From a simple call counter, it evolved through dozens of versions to include interval limiting, quiet hours, whitelists, time-based policies, per-group quotas, and more. Today, it's one of the most comprehensive API rate limiting solutions on the AstrBot Plugin Marketplace. We've journeyed from v1.0.0 to v2.4.5, with every release shaped by community feedback and user needs.
 
-Along the way, we noticed the AstrBot community was missing handy utility tools — IP lookups, random draws, trending topic searches, and more. That led us to build **astrbot_plugin_qq_toolbox**, bundling 20+ useful commands into a single plugin so users only need one install for a full toolkit.
+Along the way, we noticed the AstrBot community was missing handy utility tools — IP lookups, random draws, trending topic searches, and more. Users would frequently ask in group chats, "Is there a weather command?" or "Can you add a lucky draw feature?" — That led us to build **astrbot_plugin_qq_toolbox**, bundling 20+ useful commands into a single plugin so users only need one install for a full toolkit. One plugin to solve all daily needs — that's our design philosophy.
 
 The name **Neko Ai Dev** reflects our values: "Neko" (cat) represents the fun and warmth we bring to open source, "Ai" stands for our commitment to the AI era, and "Dev" is our developer roots. We aim to create value for the community — even if it's just a small convenience.
+
+From one person writing code to building an organization, establishing automated workflows, listing on the plugin marketplace, and publishing bilingual documentation... this journey has been full of challenges and rewards. We're grateful to the AstrBot community and every user who has supported us along the way.
+
+### 🏗️ Organization Structure
+
+Neko Ai Dev uses a lean organizational model:
+
+- **Organization Owner**: [xiaohondan](https://github.com/xiaohondan) — Responsible for overall planning, development, and community maintenance
+- **Automation System**: GitHub Actions handles repetitive tasks like issue triage, PR checks, and code review, allowing developers to focus on creation
+- **Open Collaboration**: Any interested developer can contribute via the Fork + PR workflow
 
 ### 🚀 Why Choose Our Plugins?
 
 - ✅ Published on the [AstrBot Plugin Marketplace](https://plugins.astrbot.app) — one-click install, no manual setup
-- ✅ Comprehensive documentation and README in both Chinese and English
-- ✅ Full GitHub Actions automation — auto issue triage, PR checks, and code linting
-- ✅ Actively maintained with timely bug fixes and stable version iterations
+- ✅ Comprehensive documentation and README in both Chinese and English, beginner-friendly
+- ✅ Full GitHub Actions automation — auto issue triage, PR checks, and code linting for guaranteed code quality
+- ✅ Actively maintained with timely bug fixes and stable version iterations, average release cycle under one week
 - ✅ Advanced features like per-group quotas and time-based policies for complex use cases
+- ✅ MIT open-source license — fully transparent code, free to modify and redistribute
+- ✅ Bilingual documentation (中文 + English), serving users worldwide
 
 ---
 
@@ -61,22 +104,26 @@ The name **Neko Ai Dev** reflects our values: "Neko" (cat) represents the fun an
 
 ### [astrbot_plugin_api_limiter](https://github.com/NekoAiDev/astrbot_plugin_api_limiter)
 
-<img src="https://img.shields.io/github/v/release/NekoAiDev/astrbot_plugin_api_limiter?style=flat-square" alt="Release"/> <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License"/> <a href="https://github.com/NekoAiDev/astrbot_plugin_api_limiter/stargazers"><img src="https://img.shields.io/github/stars/NekoAiDev/astrbot_plugin_api_limiter?style=flat-square" alt="Stars"/></a> <a href="https://github.com/NekoAiDev/astrbot_plugin_api_limiter/forks"><img src="https://img.shields.io/github/forks/NekoAiDev/astrbot_plugin_api_limiter?style=flat-square" alt="Forks"/></a>
+<img src="https://img.shields.io/github/v/release/NekoAiDev/astrbot_plugin_api_limiter?style=flat-square" alt="Release"/> <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License"/> <a href="https://github.com/NekoAiDev/astrbot_plugin_api_limiter/stargazers"><img src="https://img.shields.io/github/stars/NekoAiDev/astrbot_plugin_api_limiter?style=flat-square" alt="Stars"/></a> <a href="https://github.com/NekoAiDev/astrbot_plugin_api_limiter/forks"><img src="https://img.shields.io/github/forks/NekoAiDev/astrbot_plugin_api_limiter?style=flat-square" alt="Forks"/></a> <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status"/>
 
 **API Rate Limiter** — A comprehensive rate limiting plugin for AstrBot that helps you manage API call frequency and prevent abuse. Perfect for metered APIs like LLMs, translation services, and more.
 
+This is our flagship plugin and one of the most popular rate limiting solutions on the AstrBot Plugin Marketplace. From v1.0 to v2.4.5, we've continuously refined every detail.
+
 **Typical Use Cases:**
 
-- 🤖 **LLM Chat Rate Limiting** — Prevent users from spamming AI chat in groups and keep API costs under control
-- 🌐 **Translation API Control** — Allocate daily translation quotas per user/group for fair distribution
-- 🔍 **Search API Management** — Manage rate-limited APIs like web search and image search
-- 📊 **Multi-Group Differentiation** — Different quotas for different groups; VIP groups get more relaxed limits
+- 🤖 **LLM Chat Rate Limiting** — Prevent users from spamming AI chat in groups and keep API costs under control. Supports multi-dimensional limits including daily totals, hourly caps, and minimum intervals
+- 🌐 **Translation API Control** — Allocate daily translation quotas per user/group for fair distribution. Prevent individual users from monopolizing translation capacity
+- 🔍 **Search API Management** — Manage rate-limited APIs like web search and image search. Make limited API quotas serve more users
+- 📊 **Multi-Group Differentiation** — Different quotas for different groups; VIP groups get more relaxed limits. Each group has completely independent configuration
+- 🌙 **Automatic Night Mode** — Automatically disable API calls during late night hours, saving costs and avoiding disruptions
+- 🏢 **Enterprise/Team Management** — Whitelist mechanism exempts admins, blacklist mechanism precisely blocks abusive users
 
 **Core Features:**
 
 | Feature | Description |
 |---------|-------------|
-| ⏱ Interval Limiting | Control the minimum time between consecutive API calls |
+| ⏱ Interval Limiting | Control the minimum time between consecutive API calls to prevent spamming |
 | 🔢 Count Limiting + Cooldown Reset | Set daily/hourly quotas that automatically reset after cooldown |
 | 🌙 Quiet Hours | Automatically disable API calls during specified time periods |
 | 📋 Whitelist & Blacklist | Fine-grained control over which users/groups are affected, admin exempt |
@@ -86,39 +133,71 @@ The name **Neko Ai Dev** reflects our values: "Neko" (cat) represents the fun an
 | 📊 Usage Logging & Export | Track all API calls with exportable logs for analysis |
 | 🔄 Admin Reset Commands | Reset user or group counters at any time |
 
+**Quick Start:**
+
+```
+# 1. Search "api_limiter" in the AstrBot Plugin Marketplace and install with one click
+# 2. Configure your rate limiting rules in the AstrBot config file
+# 3. Restart AstrBot — the rate limiter activates automatically
+```
+
 > 📌 Available on the [AstrBot Plugin Marketplace](https://plugins.astrbot.app). Current version: **v2.4.5**. Continuously updated.
 
 ---
 
 ### [astrbot_plugin_qq_toolbox](https://github.com/NekoAiDev/astrbot_plugin_qq_toolbox)
 
-<img src="https://img.shields.io/badge/Version-1.0.0-9cf?style=flat-square" alt="Version"/> <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License"/> <a href="https://github.com/NekoAiDev/astrbot_plugin_qq_toolbox/stargazers"><img src="https://img.shields.io/github/stars/NekoAiDev/astrbot_plugin_qq_toolbox?style=flat-square" alt="Stars"/></a> <a href="https://github.com/NekoAiDev/astrbot_plugin_qq_toolbox/forks"><img src="https://img.shields.io/github/forks/NekoAiDev/astrbot_plugin_qq_toolbox?style=flat-square" alt="Forks"/></a>
+<img src="https://img.shields.io/badge/Version-1.0.0-9cf?style=flat-square" alt="Version"/> <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License"/> <a href="https://github.com/NekoAiDev/astrbot_plugin_qq_toolbox/stargazers"><img src="https://img.shields.io/github/stars/NekoAiDev/astrbot_plugin_qq_toolbox?style=flat-square" alt="Stars"/></a> <a href="https://github.com/NekoAiDev/astrbot_plugin_qq_toolbox/forks"><img src="https://img.shields.io/github/forks/NekoAiDev/astrbot_plugin_qq_toolbox?style=flat-square" alt="Forks"/></a> <img src="https://img.shields.io/badge/Status-Development-yellow?style=flat-square" alt="Status"/>
 
 **QQ Toolbox** — An all-in-one utility plugin packed with 20+ commands across entertainment, queries, content generation, and group management. Spice up your group chat experience!
+
+One plugin = a complete group chat toolkit. No need to install a bunch of scattered plugins — Toolbox gives you everything you need for daily group chat in a single install.
 
 **Feature Categories:**
 
 | Category | Commands | Description |
 |----------|----------|-------------|
-| 🎮 Entertainment | 10+ | Fun group chat mini-games, random draws, quizzes, and more |
-| 🔍 Utility Queries | 5+ | Weather, trending topics, IP lookup, and practical tools |
-| ✍️ Content Generation | 4+ | AI-powered copywriting, image generation, and more |
+| 🎮 Entertainment | 10+ | Fun group chat mini-games, random draws, quizzes, lucky wheels, and more |
+| 🔍 Utility Queries | 5+ | Weather lookup, trending topics, IP geolocation, currency exchange, and more |
+| ✍️ Content Generation | 4+ | AI-powered copywriting, image generation, text polishing, random quotes, and more |
 | ⚙️ Group Management | 2+ | Admin tools for managing group chat settings |
-| 🔄 Auto-Reply | 1 | Configurable automatic message repetition |
+| 🔄 Auto-Reply | 1 | Configurable automatic message repetition to keep groups active |
+
+**Highlight Features:**
+
+- 🎰 **Random Draw** — Help group members make decisions when they can't choose
+- 🌤 **Weather Query** — Enter a city name, get real-time weather instantly
+- 🔥 **Trending Topics** — Get the latest hot searches from Weibo/Baidu with one command
+- 🌐 **IP Lookup** — Query IP geolocation and ISP information
+- 🎨 **Image Generation** — Enter a description, AI generates an image
+- 📝 **Copywriting** — AI-assisted writing for posts, jokes, greetings, and more
 
 > 📌 Development complete. Coming soon to the [AstrBot Plugin Marketplace](https://plugins.astrbot.app).
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Technical Architecture
+
+### Tech Stack
 
 | Technology | Usage | Details |
 |------------|-------|---------|
-| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | Plugin Development | Python 3.10+, type annotations |
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | Plugin Development | Python 3.10+, comprehensive type annotations |
 | ![AstrBot](https://img.shields.io/badge/AstrBot_Framework-blue?style=flat-square) | Bot Framework | Based on official AstrBot plugin spec |
 | ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white) | CI/CD Automation | Auto issue triage, PR checks, code lint |
 | ![ruff](https://img.shields.io/badge/ruff-Linter-yellow?style=flat-square) | Code Quality | High-performance Python linter & formatter |
 | ![MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square) | License | All plugins under MIT license |
+| ![YAML](https://img.shields.io/badge/Config-YAML-orange?style=flat-square) | Configuration | YAML-based plugin configuration |
+
+### Design Principles
+
+Our plugin architecture follows these design principles:
+
+1. **Modular Design** — Each feature module is independent for easy maintenance and extension
+2. **Configuration-Driven** — All features controlled via config files, no code modification needed
+3. **Progressive Enhancement** — Core features work out of the box, advanced features opt-in
+4. **Graceful Degradation** — External service failures are silently skipped without affecting core functionality
+5. **Defensive Programming** — All external inputs are validated to prevent unexpected crashes
 
 ---
 
@@ -126,31 +205,121 @@ The name **Neko Ai Dev** reflects our values: "Neko" (cat) represents the fun an
 
 We follow these standards to ensure code quality:
 
-- **Versioning** — [Semantic Versioning](https://semver.org/) (SemVer)
-  - `MAJOR.MINOR.PATCH` (e.g., `2.4.5`)
-  - Bug fix → PATCH +1
-  - New feature → MINOR +1
-  - Major rewrite → MAJOR +1
-- **Git Commits** — [Conventional Commits](https://www.conventionalcommits.org/)
-  - `feat:` new feature / `fix:` bug fix / `docs:` documentation / `refactor:` refactoring / `chore:` maintenance
-- **Code Style** — Automatically checked with ruff, CI runs on every PR
-- **Issue Management** — Auto-labeled (bug / enhancement / question / documentation / triage)
-- **Release Process** — Every update must: push to GitHub + publish GitHub Release + update plugin marketplace
+### Version Management
+
+Following [Semantic Versioning](https://semver.org/) (SemVer):
+
+| Change Type | Version Impact | Example |
+|-------------|---------------|---------|
+| Bug fixes, minor changes | PATCH +1 | `2.4.0` → `2.4.1` |
+| New features (medium scope) | MINOR +1 | `2.4.5` → `2.5.0` |
+| Major rewrites | MAJOR +1 | `2.5.0` → `3.0.0` |
+
+### Git Commit Convention
+
+Using [Conventional Commits](https://www.conventionalcommits.org/):
+
+| Prefix | Purpose | Example |
+|--------|---------|---------|
+| `feat:` | New feature | `feat: add time-based rate limiting policy` |
+| `fix:` | Bug fix | `fix: resolve quiet hours not working` |
+| `docs:` | Documentation | `docs: update README installation guide` |
+| `refactor:` | Refactoring | `refactor: restructure rate limiting engine` |
+| `chore:` | Maintenance | `chore: upgrade dependencies` |
+| `perf:` | Performance | `perf: optimize log query speed` |
+
+### Code Style
+
+- Automatically checked with **ruff**, CI runs on every PR
+- Python type annotation coverage ≥ 80%
+- Every public function has a docstring
+- Error messages in Chinese for better user understanding
+
+### Release Process
+
+Every update must complete these steps:
+
+1. ✅ Local testing passed
+2. ✅ Push to GitHub (with tag)
+3. ✅ Publish GitHub Release (with changelog)
+4. ✅ Update [AstrBot Plugin Marketplace](https://plugins.astrbot.app)
+
+---
+
+## 🤖 Automation Pipeline
+
+We've configured a complete GitHub Actions automation pipeline for each plugin repository:
+
+### Auto Issue Triage (issue-triage.yml)
+
+| Trigger | Automatic Action |
+|---------|-----------------|
+| New issue created | Auto-label based on title keywords |
+| Keyword matching | `bug` / `enhancement` / `question` / `documentation` / `triage` |
+| Auto-assign | Automatically assigned to repository maintainer |
+| Auto-comment | Chinese welcome message; bug-type issues get a report checklist reminder |
+
+### Auto PR Check (pr-check.yml)
+
+| Check | Description |
+|-------|-------------|
+| Title format | Suggests using `feat:` / `fix:` / `docs:` prefixes |
+| Issue linking | Prompts to link issues via `Fixes #xx` / `Closes #xx` |
+| Auto-comment | Chinese feedback on PR check results |
+
+### Code Quality (python-lint.yml)
+
+| Check | Description |
+|-------|-------------|
+| Syntax check | ruff syntax rule checking |
+| Format check | ruff code format checking |
+| Trigger | Push to main/master + PR submission |
+| Runtime | Python 3.12 |
 
 ---
 
 ## 🗺 Roadmap
 
-We're actively planning and developing the following:
+### ✅ Completed
 
 - [x] 🔧 API Rate Limiter v1.0 — Basic rate limiting features
 - [x] ⚡ API Limiter v2.0 — Per-group quotas, time-based policies
+- [x] 📝 API Limiter v2.4 — Usage log export, admin reset, over-limit reminders
 - [x] 🎮 QQ Toolbox — 20+ multi-function commands
 - [x] 🤖 GitHub Actions Automation — Issue triage, PR checks, code lint
 - [x] 🌐 Bilingual Documentation (Chinese & English)
-- [ ] 📊 Usage Statistics Dashboard (planned)
-- [ ] 🔌 More Platform Adapters (planned)
-- [ ] 🧩 More Utility Plugins (continuously planning)
+- [x] 🏪 Plugin Marketplace Listing — Rate limiter approved and listed
+- [x] 🔄 Code Standardization — ruff integration, Conventional Commits
+
+### 🚧 In Progress
+
+- [ ] 📊 Usage Statistics Dashboard — Visualize API call trends and user usage patterns
+- [ ] 📱 QQ Toolbox Marketplace Listing — Complete documentation and submit for review
+
+### 📋 Planned
+
+- [ ] 🔌 More Platform Adapters — Optimize experience for Discord, Feishu, and more
+- [ ] 🧩 More Utility Plugins — Plan new plugins based on community demand
+- [ ] 📖 Developer Documentation Site — Standalone docs site with detailed development guides
+- [ ] 🎨 Visual Plugin Configuration — Web UI config interface to lower the barrier to entry
+- [ ] 📦 Plugin Template — Standardized AstrBot plugin development template
+- [ ] 🤝 Community Contributor System — Contributor leaderboard and reward mechanism
+
+---
+
+## 📜 Version History
+
+### astrbot_plugin_api_limiter
+
+| Version | Date | Key Changes |
+|---------|------|-------------|
+| v2.4.5 | 2026-04 | Current stable release, fully featured |
+| v2.4.0 | 2026-04 | Usage log export, admin reset commands |
+| v2.3.0 | 2026-03 | Time-based rate limiting policies |
+| v2.2.0 | 2026-03 | Over-limit reminders, blacklist enhancements |
+| v2.1.0 | 2026-02 | Per-group independent quotas |
+| v2.0.0 | 2026-01 | Major rewrite, architecture optimization |
+| v1.x.x | 2025 | Initial versions, basic rate limiting |
 
 ---
 
@@ -161,15 +330,23 @@ We welcome contributions in any form! Whether you want to:
 - 🐛 Submit a [bug report](https://github.com/NekoAiDev/astrbot_plugin_api_limiter/issues) or feature request
 - 🔀 Open a Pull Request to fix issues or add features
 - 📖 Improve documentation or translations
+- 💬 Share your experience in the community
 - ⭐ Give us a Star on GitHub
 
 **How to Contribute:**
 
-1. Fork the repository you want to contribute to
-2. Create a feature branch: `git checkout -b feat/amazing-feature`
-3. Commit your changes: `git commit -m "feat: add some amazing feature"`
-4. Push to the branch: `git push origin feat/amazing-feature`
-5. Open a Pull Request
+1. **Fork** the repository you want to contribute to
+2. **Create a feature branch**: `git checkout -b feat/amazing-feature`
+3. **Commit your changes**: `git commit -m "feat: add some amazing feature"`
+4. **Push to the branch**: `git push origin feat/amazing-feature`
+5. **Open a Pull Request** — Our automation system will automatically run code checks
+
+**Guidelines:**
+
+- Please follow our [Conventional Commits](https://www.conventionalcommits.org/) convention
+- Ensure your code passes ruff checks (`ruff check .`)
+- PR titles should use `feat:` / `fix:` / `docs:` prefixes
+- Link related issues when applicable (`Fixes #xx` / `Closes #xx`)
 
 Every bit of support motivates us to keep building!
 
@@ -180,25 +357,95 @@ Every bit of support motivates us to keep building!
 <details>
 <summary><b>🔧 How do I install the plugins?</b></summary>
 
-We recommend installing via the [AstrBot Plugin Marketplace](https://plugins.astrbot.app) with one click. You can also download the source code from GitHub Releases and manually place it in the AstrBot plugin directory.
+**Recommended**: Install via the [AstrBot Plugin Marketplace](https://plugins.astrbot.app) with one click. Search for the plugin name in the AstrBot dashboard and click install.
+
+**Manual**: Download the source code from GitHub Releases, extract it into AstrBot's `data/plugins/` directory, and restart AstrBot.
+
+Both methods are fully supported. We recommend the marketplace for automatic updates.
 </details>
 
 <details>
 <summary><b>🐛 What should I do if I find a bug?</b></summary>
 
-Please submit a bug report on the [Issues](https://github.com/NekoAiDev/astrbot_plugin_api_limiter/issues) page of the corresponding repository. Include the plugin version, AstrBot version, steps to reproduce, and relevant logs. Our automation system will automatically categorize and process it.
+Please submit a bug report on the [Issues](https://github.com/NekoAiDev/astrbot_plugin_api_limiter/issues) page of the corresponding repository. To help us fix it quickly, please include:
+
+1. Plugin version number (visible in the AstrBot dashboard)
+2. AstrBot version number
+3. Detailed steps to reproduce the bug
+4. Relevant error logs (available in AstrBot's log files)
+
+Our automation system will automatically categorize your issue, and maintainers will handle it as soon as possible.
 </details>
 
 <details>
 <summary><b>💡 Can I suggest a new feature?</b></summary>
 
-Absolutely! Open an Issue with a title starting with "feature" or "enhancement". We'll evaluate it and add it to our development roadmap if it aligns with our goals.
+Absolutely! Open an Issue with a title starting with "feature" or "enhancement". We'll evaluate feasibility and priority, and add it to our development roadmap if it aligns with our goals.
+
+For the best chance of adoption, include:
+- What feature you'd like
+- Why you need it (use case scenario)
+- Expected behavior description
+
+Good suggestions are often adopted quickly!
 </details>
 
 <details>
 <summary><b>📋 Which platforms are supported?</b></summary>
 
-Our plugins are built on the AstrBot framework and theoretically support all of AstrBot's message platform adapters, including but not limited to QQ, WeChat, and Telegram.
+Our plugins are built on the AstrBot framework and theoretically support all of AstrBot's message platform adapters, including but not limited to:
+
+- **QQ** — Full support
+- **WeChat** — Full support
+- **Telegram** — Full support
+- **Feishu (Lark)** — Full support
+- **Discord** — Basic support
+- **Web** — Full support
+
+Actual compatibility depends on the AstrBot framework's platform support.
+</details>
+
+<details>
+<summary><b>⚙️ How do I configure rate limiting rules?</b></summary>
+
+The API Rate Limiter supports detailed configuration in the AstrBot config file. Main configuration options include:
+
+- **Interval Time**: Minimum seconds between consecutive API calls
+- **Daily Limit**: Maximum calls per user per day
+- **Hourly Limit**: Maximum calls per user per hour
+- **Quiet Hours**: Time periods when API calls are automatically disabled
+- **Whitelist**: Users exempt from all limits
+- **Blacklist**: Users completely blocked from API access
+
+For detailed configuration instructions, please refer to the README documentation in each plugin repository.
+</details>
+
+<details>
+<summary><b>🔄 How do I update the plugins?</b></summary>
+
+If you installed via the AstrBot Plugin Marketplace, you can check for updates and upgrade with one click directly from the AstrBot dashboard.
+
+For manual installations, download the latest version from GitHub Releases, replace the old plugin files, and restart AstrBot for the new version to take effect.
+</details>
+
+<details>
+<summary><b>📝 Are the plugins free?</b></summary>
+
+Yes! All our plugins are MIT-licensed open source and completely free to use.
+
+Note that third-party APIs you use with the plugins (such as LLM APIs, translation APIs, etc.) may have their own costs.
+</details>
+
+<details>
+<summary><b>🤖 How does your GitHub Actions automation work?</b></summary>
+
+We configure 3 automated Workflow pipelines for each plugin repository:
+
+1. **Auto Issue Triage**: New issues are auto-labeled by title keywords, auto-assigned to maintainers, and receive a welcome comment
+2. **Auto PR Check**: Checks PR title format, suggests issue linking, and runs code style checks
+3. **Python Code Lint**: Uses ruff for Python syntax and format checking
+
+All of this runs on GitHub's servers at zero cost with no maintenance required.
 </details>
 
 ---
@@ -209,8 +456,9 @@ Our plugins are built on the AstrBot framework and theoretically support all of 
 |--------|------|
 | **Organization Owner** | [xiaohondan](https://github.com/xiaohondan) |
 | **Email** | xiaohondan@skymail.ink |
-| **GitHub** | [NekoAiDev](https://github.com/NekoAiDev) |
+| **GitHub Org** | [NekoAiDev](https://github.com/NekoAiDev) |
 | **Plugin Marketplace** | [AstrBot Plugin Marketplace](https://plugins.astrbot.app) |
+| **Bug Reports** | [Submit an Issue](https://github.com/NekoAiDev/astrbot_plugin_api_limiter/issues) |
 
 ---
 
@@ -219,5 +467,7 @@ Our plugins are built on the AstrBot framework and theoretically support all of 
 **Made with ❤️ by Neko Ai Dev**
 
 *If you like our plugins, give them a ⭐ on GitHub!*
+
+*Thanks to every user in the AstrBot community — your feedback drives us forward.*
 
 </div>
