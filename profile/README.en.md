@@ -25,7 +25,7 @@
 ## 📋 Table of Contents
 
 - [About Us](#-about-us)
-- [项目](#-projects)
+- [Project](#-projects)
 - [Technical Architecture](#-technical-architecture)
 - [Security Philosophy](#-security-philosophy)
 - [Quality Assurance](#-quality-assurance)
@@ -139,7 +139,7 @@ This is our flagship plugin and one of the most popular rate limiting solutions 
 
 **Core Features:**
 
-| Feature | Description |
+| Feature |描述|
 |---------|-------------|
 | ⏱ Interval Limiting | Control the minimum time between consecutive API calls to prevent spamming |
 | 🔢 Count Limiting + Cooldown Reset | Set daily/hourly quotas that automatically reset after cooldown |
@@ -178,7 +178,7 @@ One plugin = a complete group chat toolkit. No need to install a bunch of scatte
 
 **Feature Categories:**
 
-| Category | Commands | Description |
+| Category | Commands |描述|
 |----------|----------|-------------|
 | 🎮 Entertainment | 10+ | Fun group chat mini-games, random draws, quizzes, lucky wheels, and more |
 | 🔍 Utility Queries | 5+ | Weather lookup, trending topics, IP geolocation, currency exchange, and more |
@@ -255,7 +255,7 @@ Security is the foundation of our design, not an afterthought:
 
 We've established a comprehensive quality assurance system to ensure the reliability of every release:
 
-| Layer | Description |
+| Layer |描述|
 |-------|-------------|
 | 🔍 Code Review | Every commit is automatically checked by ruff; PRs are manually reviewed by maintainers |
 | 🤖 Automated CI | GitHub Actions runs code quality checks on every push and PR |
