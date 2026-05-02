@@ -7,17 +7,20 @@
 **AstrBot Plugins & Tech Development Organization**
 
 [![GitHub](https://img.shields.io/badge/GitHub-NekoAiDev-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/NekoAiDev)
+[![Author](https://img.shields.io/badge/Author-%E5%B0%8F%E7%BA%A2%E8%9B%8B-orange?style=flat-square)](https://github.com/xiaohondan)
 [![AstrBot](https://img.shields.io/badge/AstrBot-Plugin-blue?style=flat-square)](https://github.com/Soulter/AstrBot)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Plugins](https://img.shields.io/badge/Plugins-2+-orange?style=flat-square)](https://github.com/orgs/NekoAiDev/repositories)
 [![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/NekoAiDev/.github/tree/main/profile)
 
-[🌐 中文](./README.md)
+[🌐 中文](https://github.com/NekoAiDev)
 
 </div>
 
 ---
+
+
 
 ## 📋 Table of Contents
 

@@ -7,6 +7,7 @@
 **AstrBot 插件、技术开发组织 | AstrBot Plugins & Tech Development Organization**
 
 [![GitHub](https://img.shields.io/badge/GitHub-NekoAiDev-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/NekoAiDev)
+[![Author](https://img.shields.io/badge/Author-小红蛋-orange?style=flat-square)](https://github.com/xiaohondan)
 [![AstrBot](https://img.shields.io/badge/AstrBot-Plugin-blue?style=flat-square)](https://github.com/Soulter/AstrBot)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://opensource.org/licenses/MIT)
