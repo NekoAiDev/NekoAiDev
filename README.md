@@ -4,9 +4,9 @@
 
 # Neko Ai
 
-**AstrBot Plugin Development Organization**
+**AstrBot Plugins & Tech Development Organization**
 
-喵~ Welcome to Neko Ai! We are a development team focused on creating high-quality plugins for [AstrBot](https://github.com/Soulter/AstrBot).
+喵~ Welcome to Neko Ai! We are a development team focused on creating high-quality plugins for [AstrBot](https://github.com/Soulter/AstrBot) and exploring other fun open-source projects.
 
 [![GitHub](https://img.shields.io/badge/GitHub-NekoAiDev-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/NekoAiDev)
 [![AstrBot](https://img.shields.io/badge/AstrBot-Plugin-blue?style=flat-square)](https://github.com/Soulter/AstrBot)
