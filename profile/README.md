@@ -16,6 +16,9 @@
 [![Downloads](https://img.shields.io/github/downloads/NekoAiDev/astrbot_plugin_api_limiter/total?style=flat-square&label=Downloads&color=brightgreen)](https://github.com/NekoAiDev/astrbot_plugin_api_limiter/releases)
 [![Chat](https://img.shields.io/badge/Chat-QQ%20Group-red?style=flat-square&logo=tencentqq&logoColor=white)](https://qm.qq.com)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/NekoAiDev)
+[![Downloads](https://img.shields.io/github/downloads/NekoAiDev/astrbot_plugin_api_limiter/total?style=flat-square&label=Downloads&color=brightgreen)](https://github.com/NekoAiDev/astrbot_plugin_api_limiter/releases)
+[![Chat](https://img.shields.io/badge/Chat-QQ%20Group-red?style=flat-square&logo=tencentqq&logoColor=white)](https://qm.qq.com)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/NekoAiDev)
 
 [🌐 English](https://github.com/NekoAiDev/.github/blob/main/profile/README.en.md)
 
