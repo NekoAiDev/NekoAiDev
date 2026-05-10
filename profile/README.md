@@ -8,7 +8,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-NekoAiDev-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/NekoAiDev)
 [![Author](https://img.shields.io/badge/Author-小红蛋-orange?style=flat-square)](https://github.com/xiaohondan)
-[![AstrBot](https://img.shields.io/badge/AstrBot-Plugin-blue?style=flat-square)](https://github.com/Soulter/AstrBot)
+[![AstrBot](https://img.shields.io/badge/AstrBot-Plugin-blue?style=flat-square)](https://github.com/AstrBotDevs/AstrBot)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Plugins](https://img.shields.io/badge/Plugins-2+-orange?style=flat-square)](https://github.com/orgs/NekoAiDev/repositories)
@@ -25,6 +25,11 @@
 [🌐 English](https://github.com/NekoAiDev/.github/blob/main/profile/README.en.md)
 
 </div>
+
+---
+
+
+https://camo.githubusercontent.com/eef382aed490cdeb2d26355f39e7572242321ca33c5b0c2a88aecfe14174dbf1/68747470733a2f2f777372762e6e6c2f3f75726c3d6874747073253341253246253246696d616765732e7465616d7265736f7572636566756c2e636f6d253246752532463876434c674b2e737667266e3d2d31
 
 ---
 
