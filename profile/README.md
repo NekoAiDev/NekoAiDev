@@ -13,6 +13,9 @@
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Plugins](https://img.shields.io/badge/Plugins-2+-orange?style=flat-square)](https://github.com/orgs/NekoAiDev/repositories)
 [![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/NekoAiDev/.github/tree/main/profile)
+[![Downloads](https://img.shields.io/github/downloads/NekoAiDev/astrbot_plugin_api_limiter/total?style=flat-square&label=Downloads&color=brightgreen)](https://github.com/NekoAiDev/astrbot_plugin_api_limiter/releases)
+[![Chat](https://img.shields.io/badge/Chat-QQ%20Group-red?style=flat-square&logo=tencentqq&logoColor=white)](https://qm.qq.com)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/NekoAiDev)
 
 [🌐 English](https://github.com/NekoAiDev/.github/blob/main/profile/README.en.md)
 
