@@ -15,7 +15,7 @@
 [![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/NekoAiDev/.github/tree/main/profile)
 [![Downloads](https://img.shields.io/github/downloads/NekoAiDev/.github/total?style=flat-square&label=Downloads&color=brightgreen)](https://github.com/NekoAiDev/.github/releases)
 [![Chat](https://img.shields.io/badge/Chat-%E6%98%BE%E7%9F%B3%E7%9A%84%E7%BC%96%E7%A8%8B%E4%BA%A4%E6%B5%81%E7%BE%A4-red?style=flat-square&logo=tencentqq&logoColor=white)](https://qm.qq.com/q/rFZ3Sxlqa4)
-[![Stars](https://img.shields.io/github/stars/NekoAiDev/.github?style=flat-square&logo=github&label=Stars&color=black)](https://github.com/NekoAiDev/.github/stargazers)
+[![G-Star](https://img.shields.io/github/stars/NekoAiDev/.github?style=flat-square&logo=github&label=G-Star&color=black)](https://github.com/NekoAiDev/.github/stargazers)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](https://opensource.org/licenses/MIT)
 [![OS](https://img.shields.io/badge/OS-Windows%2010%2F11%2064%20bit-blue?style=flat-square&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
 [![Ask DeepWiki - neko-cli](https://deepwiki.com/badge.svg)](https://deepwiki.com/NekoAiDev/neko-cli)
