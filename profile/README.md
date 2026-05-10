@@ -17,7 +17,7 @@
 [![Chat](https://img.shields.io/badge/Chat-%E6%98%BE%E7%9F%B3%E7%9A%84%E7%BC%96%E7%A8%8B%E4%BA%A4%E6%B5%81%E7%BE%A4-red?style=flat-square&logo=tencentqq&logoColor=white)](https://qm.qq.com/q/rFZ3Sxlqa4)
 [![Docker Pulls](https://img.shields.io/docker/pulls/soulter/astrbot?style=flat-square&logo=docker&logoColor=white&label=docker%20pulls&color=2496ED)](https://hub.docker.com/r/soulter/astrbot)
 [![Marketplace](https://img.shields.io/badge/dynamic/json?style=flat-square&label=Marketplace&color=blue&query=%24.total&url=https%3A%2F%2Fmarket.astrbot.app%2Fapi%2Fplugins%2Fcount)](https://market.astrbot.app)
-[![GitHub Stars](https://img.shields.io/github/stars/AstrBotDevs/AstrBot?style=flat-square&logo=github&label=G-Star&color=gold)](https://github.com/AstrBotDevs/AstrBot/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/NekoAiDev/.github?style=flat-square&logo=github&label=G-Star&color=gold)](https://github.com/NekoAiDev/.github/stargazers)
 [![Ask DeepWiki - neko-cli](https://deepwiki.com/badge.svg)](https://deepwiki.com/NekoAiDev/neko-cli)
 [![Ask DeepWiki - qq_toolbox](https://deepwiki.com/badge.svg)](https://deepwiki.com/NekoAiDev/astrbot_plugin_qq_toolbox)
 [![Ask DeepWiki - api_limiter](https://deepwiki.com/badge.svg)](https://deepwiki.com/NekoAiDev/astrbot_plugin_api_limiter)
