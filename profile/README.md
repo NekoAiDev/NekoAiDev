@@ -29,10 +29,6 @@
 ---
 
 
-![break with optifine](https://wsrv.nl/?url=https%3A%2F%2Fimages.teamresourceful.com%2Fu%2F8vCLgK.svg&n=-1)
-
----
-
 ## 📋 目录
 
 - [关于我们](#-关于我们)
