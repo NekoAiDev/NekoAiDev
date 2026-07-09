@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NekoAiDev · 猫娘开源组织</title>
+  <meta name="description" content="NekoAiDev 是一个以猫娘文化为底色的开源组织，专注于开发者工具、AI 聊天应用与基础设施。" />
+  <meta name="msvalidate.01" content="058FEE56F3C9A9BF9392D25A95AF49C9" />
+  <style>
+    :root {
+      --bg: #0e0e16;
+      --bg-2: #16161f;
+      --card: rgba(255, 255, 255, 0.04);
+      --border: rgba(255, 255, 255, 0.08);
+      --pink: #ff9ec7;
+      --gold: #ffd866;
+      --text: #ececf1;
+      --muted: #9a9aae;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      background: radial-gradient(1200px 600px at 70% -10%, #241b2e 0%, var(--bg) 55%) fixed;
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 48px 20px 64px;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; }
+    header {
+      text-align: center;
+      padding: 24px 0 12px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 36px;
+    }
+    header img {
+      width: 168px;
+      height: auto;
+      filter: drop-shadow(0 8px 24px rgba(255, 158, 199, 0.25));
+    }
+    header h1 {
+      font-size: 34px;
+      letter-spacing: 1px;
+      margin-top: 14px;
+      background: linear-gradient(90deg, var(--pink), var(--gold));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    header p.tag { color: var(--muted); margin-top: 6px; font-size: 14px; }
+    section { margin: 32px 0; }
+    h2 {
+      font-size: 18px;
+      color: var(--gold);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h2::before { content: "🐾"; }
+    .intro {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 14px;
+    }
+    .proj {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    .proj:hover { transform: translateY(-3px); border-color: var(--pink); }
+    .proj h3 { font-size: 16px; color: var(--text); margin-bottom: 6px; }
+    .proj p { font-size: 13px; color: var(--muted); }
+    .proj .tag-row { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .pill {
+      font-size: 11px;
+      color: var(--pink);
+      border: 1px solid rgba(255, 158, 199, 0.3);
+      border-radius: 999px;
+      padding: 2px 9px;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--pink); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="https://img.nekoaidev.top/cnneko.png" alt="NekoAiDev" />
+      <h1>NekoAiDev</h1>
+      <p class="tag">喵~ 一个以猫娘文化为底色的开源组织</p>
+    </header>
+
+    <section>
+      <h2>关于我们</h2>
+      <div class="intro">
+        NekoAiDev 由一群喜欢猫娘与开源的开发者组成，致力于打造好用、可爱、接地气的开发者工具与 AI 应用。
+        我们维护从命令行工具、AI 聊天客户端到基础设施平台的多个项目，希望让技术也能软乎乎、暖洋洋的喵~
+      </div>
+    </section>
+
+    <section>
+      <h2>核心项目</h2>
+      <div class="grid">
+        <div class="proj">
+          <h3>Neko-GitHub-CLI</h3>
+          <p>中文交互式 GitHub 命令行工具，内置欢迎横幅、版本信息与命令引导。</p>
+          <div class="tag-row"><span class="pill">CLI</span><span class="pill">开发者工具</span></div>
+        </div>
+        <div class="proj">
+          <h3>Neko-Ai-Model</h3>
+          <p>集成 NapCat QQ 的猫娘 AI 聊天应用，含 Web 端与微信风格聊天布局。</p>
+          <div class="tag-row"><span class="pill">AI</span><span class="pill">QQ 机器人</span></div>
+        </div>
+        <div class="proj">
+          <h3>NekoDns</h3>
+          <p>免费二级域名分发平台，提供用户认证、DNS 管理与可用性检测。</p>
+          <div class="tag-row"><span class="pill">基础设施</span><span class="pill">DNS</span></div>
+        </div>
+        <div class="proj">
+          <h3>api_limiter</h3>
+          <p>AstrBot 运行时插件，为消息与接口提供限流保护。</p>
+          <div class="tag-row"><span class="pill">AstrBot</span><span class="pill">插件</span></div>
+        </div>
+        <div class="proj">
+          <h3>qq_toolbox</h3>
+          <p>AstrBot 运行时插件合集，扩展 QQ 平台能力。</p>
+          <div class="tag-row"><span class="pill">AstrBot</span><span class="pill">插件</span></div>
+        </div>
+        <div class="proj">
+          <h3>qq-group-admin-apply</h3>
+          <p>基于 GitHub 与 Vercel 的 QQ 群入群审核系统。</p>
+          <div class="tag-row"><span class="pill">自动化</span><span class="pill">审核</span></div>
+        </div>
+        <div class="proj">
+          <h3>astrbot_plugin_qq_zone</h3>
+          <p>通过用户 Cookie 查看 QQ 空间动态的 AstrBot 插件。</p>
+          <div class="tag-row"><span class="pill">AstrBot</span><span class="pill">QQ 空间</span></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © NekoAiDev · 用爱与代码制作的猫娘开源组织 · <a href="https://github.com/NekoAiDev">GitHub</a>
+    </footer>
+  </div>
+</body>
+</html>
