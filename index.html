@@ -158,6 +158,8 @@
             }
             repos = repos.slice().sort(function (a, b) {
               return (b.stargazers_count || 0) - (a.stargazers_count || 0);
+            }).filter(function (r) {
+              return r.name.indexOf('.') !== 0;
             });
             box.innerHTML = repos.map(function (r) {
               var lang = r.language ? '<span class="pill">' + escapeHtml(r.language) + '</span>' : '';
