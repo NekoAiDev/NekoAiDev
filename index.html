@@ -106,6 +106,51 @@
       border-radius: 999px;
       padding: 2px 9px;
     }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+    }
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .stat .num {
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--pink), var(--gold));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .stat .label { font-size: 12px; color: var(--muted); margin-top: 4px; }
+    .areas {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 14px;
+    }
+    .area {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+    }
+    .area .ico { font-size: 22px; }
+    .area h3 { font-size: 15px; margin: 8px 0 4px; color: var(--text); }
+    .area p { font-size: 13px; color: var(--muted); }
+    .contact .row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+    .contact .chip {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-size: 13px;
+      color: var(--text);
+    }
+    .contact .chip a { color: var(--pink); text-decoration: none; }
     footer {
       text-align: center;
       color: var(--muted);
@@ -134,9 +179,40 @@
     </section>
 
     <section>
+      <h2>组织数据</h2>
+      <div class="stats">
+        <div class="stat"><div class="num" id="stat-repos">…</div><div class="label">公开仓库</div></div>
+        <div class="stat"><div class="num" id="stat-stars">…</div><div class="label">累计 Star</div></div>
+        <div class="stat"><div class="num" id="stat-forks">…</div><div class="label">累计 Fork</div></div>
+        <div class="stat"><div class="num" id="stat-lang">…</div><div class="label">主要语言</div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>专注领域</h2>
+      <div class="areas">
+        <div class="area"><div class="ico">🛠️</div><h3>开发者工具</h3><p>命令行、CLI 与提效工具，让开发更顺手喵~</p></div>
+        <div class="area"><div class="ico">🤖</div><h3>AI 聊天应用</h3><p>猫娘 AI 客户端，集成 QQ 与 Web 端对话。</p></div>
+        <div class="area"><div class="ico">🏗️</div><h3>基础设施</h3><p>二级域名分发、DNS 管理等底层平台。</p></div>
+        <div class="area"><div class="ico">💬</div><h3>QQ 生态</h3><p>AstrBot 插件、群审核与空间动态扩展。</p></div>
+      </div>
+    </section>
+
+    <section>
       <h2>仓库项目</h2>
       <div id="repo-list" class="grid">
         <p class="intro">正在从 GitHub 加载仓库喵~</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>联系 &amp; 加入</h2>
+      <div class="intro contact">
+        喜欢我们的项目？欢迎来 GitHub 提 Issue、提交 PR，或加入社区一起撸猫娘喵~
+        <div class="row">
+          <span class="chip">🐱 GitHub：<a href="https://github.com/NekoAiDev" target="_blank" rel="noopener">@NekoAiDev</a></span>
+          <span class="chip">🌐 主页：<a href="https://github.nekoaidev.top" target="_blank" rel="noopener">github.nekoaidev.top</a></span>
+        </div>
       </div>
     </section>
 
@@ -161,7 +237,17 @@
             }).filter(function (r) {
               return r.name.indexOf('.') !== 0;
             });
-            box.innerHTML = repos.map(function (r) {
+            var visible = repos;
+            var totalStars = visible.reduce(function (s, r) { return s + (r.stargazers_count || 0); }, 0);
+            var totalForks = visible.reduce(function (s, r) { return s + (r.forks_count || 0); }, 0);
+            var langCount = {};
+            visible.forEach(function (r) { if (r.language) langCount[r.language] = (langCount[r.language] || 0) + 1; });
+            var topLang = Object.keys(langCount).sort(function (a, b) { return langCount[b] - langCount[a]; })[0] || '—';
+            document.getElementById('stat-repos').textContent = visible.length;
+            document.getElementById('stat-stars').textContent = totalStars;
+            document.getElementById('stat-forks').textContent = totalForks;
+            document.getElementById('stat-lang').textContent = topLang;
+            box.innerHTML = visible.map(function (r) {
               var lang = r.language ? '<span class="pill">' + escapeHtml(r.language) + '</span>' : '';
               var desc = r.description ? escapeHtml(r.description) : '暂无描述喵~';
               return '<a class="proj" href="' + escapeHtml(r.html_url) + '" target="_blank" rel="noopener">' +
