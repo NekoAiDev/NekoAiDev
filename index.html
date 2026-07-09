@@ -85,12 +85,16 @@
       gap: 14px;
     }
     .proj {
+      display: block;
+      text-decoration: none;
+      color: inherit;
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 14px;
       padding: 16px 18px;
       transition: transform .15s ease, border-color .15s ease;
     }
+    .proj h3::after { content: " \2197"; color: var(--pink); font-size: 13px; }
     .proj:hover { transform: translateY(-3px); border-color: var(--pink); }
     .proj h3 { font-size: 16px; color: var(--text); margin-bottom: 6px; }
     .proj p { font-size: 13px; color: var(--muted); }
@@ -130,45 +134,48 @@
     </section>
 
     <section>
-      <h2>核心项目</h2>
-      <div class="grid">
-        <div class="proj">
-          <h3>Neko-GitHub-CLI</h3>
-          <p>中文交互式 GitHub 命令行工具，内置欢迎横幅、版本信息与命令引导。</p>
-          <div class="tag-row"><span class="pill">CLI</span><span class="pill">开发者工具</span></div>
-        </div>
-        <div class="proj">
-          <h3>Neko-Ai-Model</h3>
-          <p>集成 NapCat QQ 的猫娘 AI 聊天应用，含 Web 端与微信风格聊天布局。</p>
-          <div class="tag-row"><span class="pill">AI</span><span class="pill">QQ 机器人</span></div>
-        </div>
-        <div class="proj">
-          <h3>NekoDns</h3>
-          <p>免费二级域名分发平台，提供用户认证、DNS 管理与可用性检测。</p>
-          <div class="tag-row"><span class="pill">基础设施</span><span class="pill">DNS</span></div>
-        </div>
-        <div class="proj">
-          <h3>api_limiter</h3>
-          <p>AstrBot 运行时插件，为消息与接口提供限流保护。</p>
-          <div class="tag-row"><span class="pill">AstrBot</span><span class="pill">插件</span></div>
-        </div>
-        <div class="proj">
-          <h3>qq_toolbox</h3>
-          <p>AstrBot 运行时插件合集，扩展 QQ 平台能力。</p>
-          <div class="tag-row"><span class="pill">AstrBot</span><span class="pill">插件</span></div>
-        </div>
-        <div class="proj">
-          <h3>qq-group-admin-apply</h3>
-          <p>基于 GitHub 与 Vercel 的 QQ 群入群审核系统。</p>
-          <div class="tag-row"><span class="pill">自动化</span><span class="pill">审核</span></div>
-        </div>
-        <div class="proj">
-          <h3>astrbot_plugin_qq_zone</h3>
-          <p>通过用户 Cookie 查看 QQ 空间动态的 AstrBot 插件。</p>
-          <div class="tag-row"><span class="pill">AstrBot</span><span class="pill">QQ 空间</span></div>
-        </div>
+      <h2>仓库项目</h2>
+      <div id="repo-list" class="grid">
+        <p class="intro">正在从 GitHub 加载仓库喵~</p>
       </div>
     </section>
+
+    <script>
+      (function () {
+        var api = 'https://api.github.com/orgs/NekoAiDev/repos?per_page=100&sort=updated';
+        function escapeHtml(s) {
+          return String(s).replace(/[&<>"']/g, function (c) {
+            return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+          });
+        }
+        fetch(api)
+          .then(function (r) { return r.json(); })
+          .then(function (repos) {
+            var box = document.getElementById('repo-list');
+            if (!Array.isArray(repos) || !repos.length) {
+              box.innerHTML = '<p class="intro">暂时没有公开仓库喵~</p>';
+              return;
+            }
+            repos = repos.slice().sort(function (a, b) {
+              return (b.stargazers_count || 0) - (a.stargazers_count || 0);
+            });
+            box.innerHTML = repos.map(function (r) {
+              var lang = r.language ? '<span class="pill">' + escapeHtml(r.language) + '</span>' : '';
+              var desc = r.description ? escapeHtml(r.description) : '暂无描述喵~';
+              return '<a class="proj" href="' + escapeHtml(r.html_url) + '" target="_blank" rel="noopener">' +
+                       '<h3>' + escapeHtml(r.name) + '</h3>' +
+                       '<p>' + desc + '</p>' +
+                       '<div class="tag-row">' + lang +
+                         '<span class="pill">★ ' + (r.stargazers_count || 0) + '</span>' +
+                       '</div>' +
+                     '</a>';
+            }).join('');
+          })
+          .catch(function () {
+            document.getElementById('repo-list').innerHTML = '<p class="intro">仓库列表加载失败，请稍后刷新喵~</p>';
+          });
+      })();
+    </script>
 
     <footer>
       © NekoAiDev · 用爱与代码制作的猫娘开源组织 · <a href="https://github.com/NekoAiDev">GitHub</a>
